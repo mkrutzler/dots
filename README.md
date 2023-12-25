@@ -8,7 +8,7 @@ personal config:
 - zsh
 - your mom
 
-for xorg => won't work on default macos.
+for xorg (arch) => won't work on default macos.
 (wayland untested)
 
 
