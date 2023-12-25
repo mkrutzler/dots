@@ -1,0 +1,9 @@
+patches applied:
+- dwm urg border 6.2
+- dwm alpha 6.4
+- dwm always center (20200625)
+- dwm attach below 6.2
+- dwm exitmenu 6.3
+- dwm restartsig (20180523)
+- dwm uselessgap (20211119)
+- dwm xrdb 6.4
