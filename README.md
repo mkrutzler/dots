@@ -1,7 +1,7 @@
 # dots
 personal config:
 - dwm
-- sent
+- sent (farbfeld from suckless is a dependency, however just use the default one)
 - st
 - dmenu
 - vim
