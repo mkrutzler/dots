@@ -1,14 +1,9 @@
-# dots
-personal config:
-- dwm
-- sent (farbfeld from suckless is a dependency, however just use the default one)
-- st
-- dmenu
-- vim
-- zsh
-- your mom
+# Personal Configuration
 
-for xorg (arch) => won't work on default macos.
-(wayland untested)
+My current MacOs setup lives here. There is no install script, but I think I'll make one in the future.
 
+My old linux configs are under "archive" and are not maintained.
 
+## Deployment
+
+🚧 In construction 🚧
