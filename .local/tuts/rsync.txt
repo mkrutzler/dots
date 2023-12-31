@@ -1,0 +1,1 @@
+rsync -avuP LIBRARYDIRECTORY root@example.org:/opt/calibre/

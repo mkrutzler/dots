@@ -1,0 +1,85 @@
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+
+
+
+% command for inkscape figures
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+\pdfsuppresswarningpagegroup=1
+
+%define "squiggly" to make red squiggly underline
+\makeatletter
+\def\squiggly{\bgroup \markoverwith{\textcolor{red}{\lower3.5\p@\hbox{\sixly \char58}}}\ULon}
+\makeatother
+
+% Stuff to edit.
+\title{<++>}
+\newcommand{\thesubtitle}{<++>}
+\newcommand{\currentdate}{<++>}
+\author{Mark Krutzler}
+\newcommand{\auemail}{mark.krutzler@icloud.com}
+\newcommand{\auwebsite}{https://krutzler.xyz}
+\newcommand{\auinstitution}{Kantonschule Im Lee}
+
+\titleformat{\section}
+{\huge\bfseries}
+{\thesection}
+{0.5em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\bfseries\LARGE}
+{\thesection}
+{0.5em}
+{}
+
+\titleformat{\subsubsection}
+{\large\bfseries}
+{\thesection}
+{0.5em}
+{}
+
+
+\renewcommand{\maketitle}{
+\begin{center}
+{\Huge\bfseries
+\thetitle}
+\vspace{0.5em}\\
+{\LARGE\thesubtitle}
+
+
+{\rule{0.4\textwidth}{.4pt}}
+
+{\bfseries \theauthor} (\href{\auwebsite}{\bfseries Website} $\vert$ \href{mailto:\auemail}{\bfseries Email})
+
+\textit{\auinstitution \ --- \currentdate}
+\end{center}
+}
+
+\begin{document}
+\maketitle
+
+\section{section}
+
+\subsection{subsection}
+
+\subsubsection{subsubsection}
+
+
+
+\end{document}
