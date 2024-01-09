@@ -66,6 +66,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-l", "10", "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
+static const char *emacscmd[]  = { "emacs", NULL };
 
 #include "exitdwm.c"
 
@@ -105,6 +106,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_e,      exitdwm,       {0} },
+	{ MODKEY,             XK_e,      spawn,       {.v = emacscmd} },
 	{ MODKEY|ControlMask|ShiftMask,             XK_q,      quit,       {0} },
 };
 
