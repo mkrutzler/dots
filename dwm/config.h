@@ -8,7 +8,7 @@ static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 	static const char *fonts[]          = { "Hack::size=10" };
 static const char dmenufont[]       = "Hack::size=10";
-static unsigned int baralpha        = 0x00;
+static unsigned int baralpha        = OPAQUE;
 static unsigned int borderalpha     = OPAQUE;
 
 static char normbgcolor[]           = "#222222";
