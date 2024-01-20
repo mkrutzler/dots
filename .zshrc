@@ -40,5 +40,3 @@ alias yta3="yt-dlp -x --audio-format mp3 --audio-quality 0"
 alias ytab="yt-dlp -x -f bestaudio/best"
 alias yt="yt-dlp"
 
-# Load zsh-syntax plugin highlifhting should be last
-source ~/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
