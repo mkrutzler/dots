@@ -59,7 +59,7 @@ sudo pacman -Sy
 Then install the requirements:
 
 ```bash
-sudo pacman -S git neovim zsh xorg make gcc picom feh python-pywal xorg-xinit ttf-hack npm ttf-font-awesome
+sudo pacman -S git neovim zsh xorg make gcc picom feh python-pywal xorg-xinit ttf-hack npm ttf-font-awesome xbindkeys
 ```
 
 Press enter when prompted, which Xorg and confirm install with "y"
@@ -90,6 +90,12 @@ Copy the dotfiles to their places :
 
 ```bash
 cp -r .local .xbindkeysrc .xinitrc .zshrc ~/
+```
+
+make select_wallpaper executable:
+
+```bash
+chmod +x ~/.local/bin/select_wallpaper
 ```
 
 also apply the nvim config:
