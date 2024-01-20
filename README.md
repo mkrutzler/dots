@@ -33,6 +33,6 @@ Deployment works by copying the files to the exact place. Might make an install/
 
 ## Credits
 
-- Luke Smith (some on vim config, inspiring me)
-- The Primeagen (for nvim configs)
+- Luke Smith (some of vim config, inspiring me)
+- The Primeagen (for nvim config)
 - Everyone who helped developing the software
