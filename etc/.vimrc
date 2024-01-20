@@ -15,7 +15,6 @@ autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 let mapleader = "£"
 map <leader>oe :setlocal spell! spelllang=en_us<CR>
 map <leader>og :setlocal spell! spelllang=de_DE<CR>
-map <leader>c :w! \| !compiler <c-r>%<CR><CR>
 autocmd BufWritePre * %s/\s\+$//e
 
 "Word Counter script:
@@ -32,11 +31,6 @@ command WC call WC()
 "ssetup jump to placeholder:   vvvv
 inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
 
-"plugins
-
-call plug#begin()
-Plug 'lervag/vimtex'
-call plug#end()
 
 "vimtex
 filetype plugin indent on
