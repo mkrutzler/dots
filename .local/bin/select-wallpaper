@@ -1,6 +1,6 @@
 #!/bin/sh
 
 
-select=$(ls ~/Wallpapers | dmenu -l 10 -nb "#222222" -nf "#ffffff" -sb "#444444" -sf "#ffffff")
+select=$(ls ~/git/dots/wallpapers | dmenu -l 10 -nb "#222222" -nf "#ffffff" -sb "#444444" -sf "#ffffff")
 
-wal -i ~/Wallpapers/$select
+wal -i ~/git/dots/wallpapers/$select
