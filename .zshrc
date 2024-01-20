@@ -6,7 +6,7 @@
 #PATH="/Users/markkrutzler/Library/Python/3.9/bin:$PATH"
 #PATH="/opt/homebrew/bin:$PATH"
 
-PATH="~/.local/bin/:$PATH"
+path+=~/.local/bin/
 
 # Show Github Branch (later use for PS1)
 autoload -U colors && colors

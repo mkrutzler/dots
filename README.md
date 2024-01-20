@@ -89,7 +89,7 @@ Copy the dotfiles to their places :
 :warning: THIS WILL REPLACE EXISTING FILES => BACK UP IF NEEDED :warning:
 
 ```bash
-cp -r .local .xbindkeysrc .xinitrc .zshrc ~/
+cp -r .local .xbindkeysrc .xinitrc .zshrc .zprofile ~/
 ```
 
 make select_wallpaper executable:
