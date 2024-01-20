@@ -25,6 +25,9 @@ If you prefer Vim there are some configs under "etc" and they will not be deploy
         - latex
         - html
 
+### Screenshots
+
+Coming soon
 
 # Deployment
 
