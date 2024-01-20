@@ -1,6 +1,6 @@
-setxkbmap -option caps:swapescape &
+setxkbmap -layout de -option caps:swapescape &
 xbindkeys &
-picom --config ~/.config/picom/picom.conf&
+picom& 
 WALLPAPER=~/git/dots/wallpapers/city-panorama.png
 wal -i $WALLPAPER&
 feh --bg-fill $WALLPAPER&
