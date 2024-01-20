@@ -31,6 +31,11 @@ command WC call WC()
 "ssetup jump to placeholder:   vvvv
 inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
 
+"plugins
+
+call plug#begin()
+Plug 'lervag/vimtex'
+call plug#end()
 
 "vimtex
 filetype plugin indent on

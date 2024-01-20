@@ -27,7 +27,9 @@ If you prefer Vim there are some configs under "etc" and they will not be deploy
 
 ## Deployment
 
-Deployment works by copying the files to the exact place. It might also be enough to symlink them (haven't tried though)
+### Requirements
+
+
 Deployment works by copying the files to the exact place. Might make an install/deploy script later
 🚧 In construction 🚧
 
