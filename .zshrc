@@ -32,6 +32,7 @@ export KEYTIMEOUT=1
 # Alias to common commands
 alias la="ls -la --color"
 alias ls="ls --color"
+alias grep='grep --color=auto'
 alias e="emacs"
 alias v="vim"
 alias lt="cp ~/.local/templates/article.tex ./text.tex"
