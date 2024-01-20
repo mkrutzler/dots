@@ -1,6 +1,18 @@
 # Personal Configuration
 
-well back on the linux machine...
+your average DWM rice with nvim and zsh configs.
+
+## Features
+for the exact patches consult the "patches" file in each suckless software folder
+
+- Dwm: 
+    - automatic colorscheme switcher according to your wallpaper (with pywal)
+    - wallpaperswitcher script to flawless hotswap wallpapers
+    - Volume Button fix for TP X220
+    - Caps and Escape swap for convenience in vim
+
+- Nvim
+    - Lazy Plugin Manager: lsp, orgmode, telescope, etc...
 
 
 ## Deployment
