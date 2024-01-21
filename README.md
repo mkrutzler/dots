@@ -20,7 +20,6 @@ If you prefer Vim there are some configs under "etc" and they will not be deploy
     - shortcuts for spellchecking
     - word counter function
     - Placeholder "<++>" you can jump to
-    - "vimtex" plugin
     - Snippets for:
         - latex
         - html
