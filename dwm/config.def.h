@@ -66,7 +66,9 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-l", "10", "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *emacscmd[]  = { "emacs", NULL };
+static const char *emailcmd[]  = { "thunderbird", NULL };
+static const char *webcmd[]  = { "firefox", NULL };
+static const char *wikicmd[]  = { "firefox", "~/vimwiki_html/index.html", NULL };
 
 #include "exitdwm.c"
 
@@ -84,9 +86,9 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
+	{ MODKEY|ShiftMask,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+	{ MODKEY|ShiftMask,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY|ShiftMask,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
@@ -106,7 +108,9 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_e,      exitdwm,       {0} },
-	{ MODKEY,             XK_e,      spawn,       {.v = emacscmd} },
+	{ MODKEY,             XK_e,      spawn,       {.v = emailcmd} },
+	{ MODKEY,             XK_w,      spawn,       {.v = webcmd} },
+	{ MODKEY|ShiftMask,             XK_w,      spawn,       {.v = wikicmd} },
 	{ MODKEY|ControlMask|ShiftMask,             XK_q,      quit,       {0} },
 };
 
