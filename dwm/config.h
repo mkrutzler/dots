@@ -68,7 +68,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-l", "10", "-fn", dmenufont, "-n
 static const char *termcmd[]  = { "st", NULL };
 static const char *emailcmd[]  = { "thunderbird", NULL };
 static const char *webcmd[]  = { "firefox", NULL };
-static const char *wikicmd[]  = { "firefox", "~/vimwiki_html/index.html", NULL };
+static const char *wikicmd[]  = { "st", "-e", "vim", "/home/m/vimwiki/index.wiki", NULL };
 
 #include "exitdwm.c"
 
