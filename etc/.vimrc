@@ -12,7 +12,7 @@ highlight Comment ctermfg=green
 set encoding=utf-8
 set wildmode=longest,list,full
 autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-let mapleader = "£"
+let mapleader = "$"
 map <leader>oe :setlocal spell! spelllang=en_us<CR>
 map <leader>og :setlocal spell! spelllang=de_DE<CR>
 autocmd BufWritePre * %s/\s\+$//e
@@ -35,6 +35,7 @@ inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
 
 call plug#begin()
 Plug 'lervag/vimtex'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 "vimtex
