@@ -2,7 +2,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
-static const unsigned int gappx     = 6;        /* gaps between windows */
+static const unsigned int gappx     = 0;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
@@ -11,12 +11,14 @@ static const char dmenufont[]       = "Hack::size=10";
 static unsigned int baralpha        = OPAQUE;
 static unsigned int borderalpha     = OPAQUE;
 
-static char normbgcolor[]           = "#222222";
-static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#005577";
-static char selbgcolor[]            = "#005577";
+static char normbgcolor[]           = "#191724";
+static char normbordercolor[]       = "#26233a";
+static char normfgcolor[]           = "#e0def4";
+static char selfgcolor[]            = "#26233a";
+//static char selbordercolor[]        = "#f6c177"; // yellow
+static char selbordercolor[]        = "#eb6f92"; // red
+//static char selbgcolor[]            = "#f6c177"; // yellow
+static char selbgcolor[]            = "#eb6f92"; // red
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
@@ -66,9 +68,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-l", "10", "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *emailcmd[]  = { "thunderbird", NULL };
+static const char *ecmd[]  = { "emacs", NULL };
 static const char *webcmd[]  = { "firefox", NULL };
-static const char *wikicmd[]  = { "st", "-e", "vim", "/home/m/vimwiki/index.wiki", NULL };
 
 #include "exitdwm.c"
 
@@ -97,7 +98,6 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY,                       XK_F5,     xrdb,           {.v = NULL } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -108,9 +108,8 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_e,      exitdwm,       {0} },
-	{ MODKEY,             XK_e,      spawn,       {.v = emailcmd} },
+	{ MODKEY,             XK_e,      spawn,       {.v = ecmd} },
 	{ MODKEY,             XK_w,      spawn,       {.v = webcmd} },
-	{ MODKEY|ShiftMask,             XK_w,      spawn,       {.v = wikicmd} },
 	{ MODKEY|ControlMask|ShiftMask,             XK_q,      quit,       {0} },
 };
 
