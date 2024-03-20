@@ -70,6 +70,8 @@ static const char *dmenucmd[] = { "dmenu_run", "-l", "10", "-fn", dmenufont, "-n
 static const char *termcmd[]  = { "st", NULL };
 static const char *ecmd[]  = { "emacs", NULL };
 static const char *webcmd[]  = { "firefox", NULL };
+static const char *ankicmd[] = { "anki", NULL};
+static const char *alsamixercmd[] = { "st", "-e", "sh", "-c", "'alsamixer'", NULL };
 
 #include "exitdwm.c"
 
@@ -110,6 +112,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_e,      exitdwm,       {0} },
 	{ MODKEY,             XK_e,      spawn,       {.v = ecmd} },
 	{ MODKEY,             XK_w,      spawn,       {.v = webcmd} },
+	{ MODKEY,             XK_a,      spawn,       {.v = ankicmd} },
+	{ MODKEY,             XK_m,      spawn,       {.v = alsamixercmd} },
 	{ MODKEY|ControlMask|ShiftMask,             XK_q,      quit,       {0} },
 };
 

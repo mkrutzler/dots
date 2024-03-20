@@ -18,7 +18,7 @@ setopt PROMPT_SUBST
 PROMPT='%F{#00ffff}%n%f@%F{yellow3}%m%f %F{blue}%B%~%b%f %b%F{39}$(parse_git_branch) %f%# '
 
 setopt AUTO_CD
-export EDITOR='nvim'
+export EDITOR='emacs'
 
 
 
@@ -33,7 +33,6 @@ alias ls="ls --color"
 alias grep='grep --color=auto'
 alias e="emacs"
 alias v="vim"
-alias vim="nvim"
 alias lt="cp ~/.local/templates/article.tex ./text.tex"
 alias yta3="yt-dlp -x --audio-format mp3 --audio-quality 0"
 alias ytab="yt-dlp -x -f bestaudio/best"
