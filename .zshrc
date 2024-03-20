@@ -20,7 +20,7 @@ setopt PROMPT_SUBST
 PROMPT='%F{#00ffff}%n%f@%F{yellow3}%m%f %F{blue}%B%~%b%f %b%F{39}$(parse_git_branch) %f%# '
 
 setopt AUTO_CD
-export EDITOR='nvim'
+export EDITOR='vim'
 
 
 

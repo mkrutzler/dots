@@ -12,7 +12,6 @@ also:
 terminal presentations
 don't support images…
 
-@nyan.png
 this text will not be displayed, since the @ at the start of the first line
 makes this paragraph an image slide.
 

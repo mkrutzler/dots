@@ -12,10 +12,10 @@ static const char *fonts[] = {
 	"Hack:size=11"
 };
 static char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
-static char normfgcolor[] = "#bbbbbb";
-static char normbgcolor[] = "#222222";
-static char selfgcolor[]  = "#eeeeee";
-static char selbgcolor[]  = "#005577";
+static char normfgcolor[] = "#fbf1c7";
+static char normbgcolor[] = "#3c3836";
+static char selfgcolor[]  = "#282828";
+static char selbgcolor[]  = "#83a598";
 static char *colors[SchemeLast][2] = {
         /*     fg         bg       */
        [SchemeNorm] = { normfgcolor, normbgcolor },

@@ -11,14 +11,12 @@ static const char dmenufont[]       = "Hack::size=10";
 static unsigned int baralpha        = OPAQUE;
 static unsigned int borderalpha     = OPAQUE;
 
-static char normbgcolor[]           = "#191724";
-static char normbordercolor[]       = "#26233a";
-static char normfgcolor[]           = "#e0def4";
-static char selfgcolor[]            = "#26233a";
-//static char selbordercolor[]        = "#f6c177"; // yellow
-static char selbordercolor[]        = "#eb6f92"; // red
-//static char selbgcolor[]            = "#f6c177"; // yellow
-static char selbgcolor[]            = "#eb6f92"; // red
+static char normbgcolor[]           = "#3c3836";
+static char normbordercolor[]       = "#a89984";
+static char normfgcolor[]           = "#fbf1c7";
+static char selfgcolor[]            = "#282828";
+static char selbordercolor[]        = "#83a598";
+static char selbgcolor[]            = "#83a598";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
