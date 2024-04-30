@@ -66,7 +66,6 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-l", "10", "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *ecmd[]  = { "emacs", NULL };
 static const char *webcmd[]  = { "firefox", NULL };
 static const char *ankicmd[] = { "anki", NULL};
 static const char *alsamixercmd[] = { "st", "-e", "sh", "-c", "'alsamixer'", NULL };
@@ -108,7 +107,6 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_e,      exitdwm,       {0} },
-	{ MODKEY,             XK_e,      spawn,       {.v = ecmd} },
 	{ MODKEY,             XK_w,      spawn,       {.v = webcmd} },
 	{ MODKEY,             XK_a,      spawn,       {.v = ankicmd} },
 	{ MODKEY,             XK_m,      spawn,       {.v = alsamixercmd} },
